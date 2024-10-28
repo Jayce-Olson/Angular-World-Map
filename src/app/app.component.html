@@ -1,6 +1,24 @@
-<main>
-  <!-- Task B  -->
-  <app-map />
+<style>
+  /* Layout CSS for Task E */
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
 
-  <app-info class="info-column" [data]="data" />
+  .info-column {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .map-column {
+    flex: 2;
+  }
+</style>
+
+
+<main class="container">
+  <!-- Task B  -->
+  <app-map class="map-column" />
+
+  <app-info class="info-column" />
 </main>
