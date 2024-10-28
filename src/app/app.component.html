@@ -18,7 +18,7 @@
 
 <main class="container">
   <!-- Task B  -->
-  <app-map class="map-column" />
+  <app-map class="map-column" (update)="update($event)" />
 
-  <app-info class="info-column" />
+  <app-info class="info-column" [data]="data" />
 </main>
