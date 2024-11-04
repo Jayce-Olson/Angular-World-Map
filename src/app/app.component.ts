@@ -22,9 +22,13 @@ export class AppComponent {
     longitude: 0
   }
 
-  async update(id: String){ // This is the second version of this project. In the first I didn't await http calls because I wasn't having problems with it, I did this time so I awaited the calls
+  update(id: String){
       // Task G
-      this.data = await this.wsb.getCountryInfoByTwoLetterId(id);
+      this.wsb.getCountryInfoByTwoLetterId(id).subscribe(
+        (data:any) => {
+          this.data = data;
+        }
+      )
   };   
 
 }
