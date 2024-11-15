@@ -1,9 +1,5 @@
-# D280WorldMap20
+# Info
 
-Student ID - 012401289
+This school project was my first exposure to Angular. It involves an SVG world map and works with the [World Bank API](https://documents.worldbank.org/en/publication/documents-reports/api) to retrieve information for each country on hover.
 
 Angular version 18.2.9.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
